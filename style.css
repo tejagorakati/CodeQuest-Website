@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Page Styles */
 body {
     font-family: Arial, sans-serif;
     background: #0a192f;
@@ -8,92 +8,106 @@ body {
     padding: 0;
 }
 
-/* Header Styling */
-.header {
+.container {
+    max-width: 800px;
+    margin: auto;
     padding: 20px;
-    font-size: 1.5em;
-    animation: fadeIn 2s ease-in-out;
-}
-.header span {
-    color: #ff9800;
 }
 
-/* Event Info */
-.event-info {
-    font-size: 1.2em;
-    margin: 20px;
-    animation: slideIn 2s ease-in-out;
+h1 {
+    font-size: 2.5rem;
 }
-.btn {
-    background: #ff9800;
+
+.highlight {
+    color: #ff4757;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.register-btn {
+    display: inline-block;
     padding: 10px 20px;
-    font-size: 1.2em;
+    background: #ff4757;
     color: white;
-    border-radius: 5px;
     text-decoration: none;
-    transition: 0.3s;
-}
-.btn:hover {
-    background: #ff5722;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-/* Rounds Section */
-.rounds-container {
+.rounds {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
+    gap: 20px;
+    margin-top: 30px;
 }
+
 .round {
-    width: 250px;
-    padding: 20px;
-    background: #112240;
+    background: #1e2a47;
+    padding: 15px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-    animation: popUp 1s ease-in-out;
+    width: 250px;
+    transition: transform 0.3s;
 }
+
+.round img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 .round:hover {
-    background: #ff9800;
     transform: scale(1.05);
 }
-.icon {
-    width: 80px;
-    animation: moveUpDown 2s infinite;
+
+/* Registration Page Styles */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Cool Bounce Effect When Clicking Rounds */
-.bounce-animation {
-    animation: bounce 0.5s ease-in-out;
+.form-container {
+    background: #1e2a47;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
 }
 
-/* Round Icons Hover Effect */
-.round-icon {
-    transition: transform 0.3s ease-in-out;
-}
-.round-icon:hover {
-    transform: scale(1.1);
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
 }
-@keyframes slideIn {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+
+.submit-btn {
+    background: #ff4757;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
-@keyframes popUp {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+
+.submit-btn:hover {
+    background: #e84142;
 }
-@keyframes moveUpDown {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+/* Smooth Page Transitions */
+body {
+    transition: opacity 0.5s ease-in-out;
 }
