@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeQuest 2025</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="header">
-        Welcome to <span>CodeQuest 2025</span>
-    </div>
+    <header class="header">
+        <h1>Welcome to <span>CodeQuest 2025</span></h1>
+        <p class="event-info">A thrilling coding competition by <b>Sathyabama CSE</b></p>
+    </header>
 
-    <div class="event-info">
-        <p>Join the ultimate Python challenge and prove your coding skills!</p>
+    <main>
+        <section class="rounds-container">
+            <div class="round" onclick="goToRound(1)">
+                <img src="icons/round1.png" class="icon" alt="Round 1">
+                <h2>Round 1</h2>
+                <p>MCQ Challenge</p>
+            </div>
+            <div class="round" onclick="goToRound(2)">
+                <img src="icons/round2.png" class="icon" alt="Round 2">
+                <h2>Round 2</h2>
+                <p>Debugging Challenge</p>
+            </div>
+            <div class="round" onclick="goToRound(3)">
+                <img src="icons/round3.png" class="icon" alt="Round 3">
+                <h2>Round 3</h2>
+                <p>Final Coding Round</p>
+            </div>
+        </section>
+
         <a href="register.html" class="btn">Register Now</a>
-    </div>
+    </main>
 
-    <div class="rounds-container">
-        <div class="round" onclick="goToRound(1)">
-            <img src="round1.png" class="icon" alt="Round 1">
-            <h2>Round 1</h2>
-            <p>MCQ Challenge</p>
-        </div>
-        <div class="round" onclick="goToRound(2)">
-            <img src="round2.png" class="icon" alt="Round 2">
-            <h2>Round 2</h2>
-            <p>Debugging Challenge</p>
-        </div>
-        <div class="round" onclick="goToRound(3)">
-            <img src="round3.png" class="icon" alt="Round 3">
-            <h2>Round 3</h2>
-            <p>Final Coding Battle</p>
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
