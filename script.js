@@ -1,4 +1,5 @@
 // Import Firebase SDKs
+// Import Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
@@ -17,6 +18,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+// Google Apps Script Web App URL
+const GOOGLE_SHEETS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxlS87y5JSlNg9t8eXwF9erq9RerlkaA3NEFkVrRGqmSXNxnLof8VbVN0-PcRasA2Be/exec";
+
 // Function to store registration data
 async function registerUser(event) {
     event.preventDefault(); // Prevent form from reloading
@@ -32,7 +36,7 @@ async function registerUser(event) {
 
     // Check if all fields are filled
     if (!name || !regNo || !section || !department || !phone || !email) {
-        message.innerText = "⚠️ Please fill all the fields!";
+        message.innerText = "⚠ Please fill all the fields!";
         message.style.color = "red";
         return;
     }
@@ -55,6 +59,23 @@ async function registerUser(event) {
             phone,
             email,
             timestamp: new Date()
+        });
+
+        // Also send data to Google Sheets
+        await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                name,
+                regNo,
+                section,
+                department,
+                phone,
+                email
+            })
         });
 
         message.innerText = "✅ Successfully registered for the event!";
