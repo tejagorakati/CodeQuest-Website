@@ -5,42 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeQuest 2025</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Header -->
-    <div class="header">
-        <h1>🚀 Welcome to <span>CodeQuest 2025</span></h1>
-        <p>The Ultimate Python Coding Challenge</p>
-    </div>
-
-    <!-- Event Info -->
-    <div class="event-info">
+    <div class="container">
+        <h1>🚀 Welcome to <span class="highlight">CodeQuest 2025</span></h1>
+        <p class="subtitle">The Ultimate Python Coding Challenge</p>
         <p>Compete in 3 exciting rounds and prove your coding skills! Win amazing prizes and boost your coding career! 🔥</p>
-        <a href="register.html" class="btn">Register Now</a>
-    </div>
+        
+        <a href="register.html" class="register-btn">Register Now</a>
 
-    <!-- Rounds Section -->
-    <div class="rounds-container">
-        <div class="round" onclick="goToRound(1)">
-            <img src="round1.png" class="icon">
-            <h2>Round 1: MCQ Test</h2>
-            <p>Test your Python knowledge with a rapid MCQ challenge.</p>
-        </div>
-
-        <div class="round" onclick="goToRound(2)">
-            <img src="round2.png" class="icon">
-            <h2>Round 2: Debugging Challenge</h2>
-            <p>Fix the buggy code and prove your debugging skills.</p>
-        </div>
-
-        <div class="round" onclick="goToRound(3)">
-            <img src="round3.png" class="icon">
-            <h2>Round 3: Coding Challenge</h2>
-            <p>Write the best solution and compete for the top spot!</p>
+        <div class="rounds">
+            <div class="round">
+                <img src="images/mcq.png" alt="MCQ Round">
+                <h2>Round 1: MCQ Test</h2>
+                <p>Test your Python knowledge with a rapid MCQ challenge.</p>
+            </div>
+            <div class="round">
+                <img src="images/debugging.png" alt="Debugging Round">
+                <h2>Round 2: Debugging Challenge</h2>
+                <p>Fix the buggy code and prove your debugging skills.</p>
+            </div>
+            <div class="round">
+                <img src="images/coding.png" alt="Coding Round">
+                <h2>Round 3: Coding Challenge</h2>
+                <p>Write the best solution and compete for the top spot!</p>
+            </div>
         </div>
     </div>
-
 </body>
 </html>
