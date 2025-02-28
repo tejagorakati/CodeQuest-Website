@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - CodeQuest 2025</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
     <script type="module" src="script.js"></script>
 </head>
 
@@ -15,23 +15,35 @@
     <div class="registration-container">
         <h2><i class="fas fa-user-plus"></i> Register for CodeQuest 2025</h2>
         <form id="registration-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" required>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+            </div>
 
-            <label for="regno">Register Number:</label>
-            <input type="text" id="regno" required>
+            <div class="form-group">
+                <label for="regno">Register Number:</label>
+                <input type="text" id="regno" required>
+            </div>
 
-            <label for="section">Section:</label>
-            <input type="text" id="section" required>
+            <div class="form-group">
+                <label for="section">Section:</label>
+                <input type="text" id="section" required>
+            </div>
 
-            <label for="department">Department:</label>
-            <input type="text" id="department" required>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+            </div>
 
-            <label for="phone">Mobile Number:</label>
-            <input type="tel" id="phone" required>
+            <div class="form-group">
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
 
-            <label for="email">Email ID:</label>
-            <input type="email" id="email" required>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" required>
+            </div>
 
             <button type="submit" class="btn-submit">Submit</button>
         </form>
