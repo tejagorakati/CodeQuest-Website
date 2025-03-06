@@ -18,7 +18,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Google Apps Script Web App URL
-const GOOGLE_SHEETS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzuWRt0P67B_FB4h8-S1IX973CikQolrx2iXGPAOR2B6UvQw7PoQtuMsLZLmi1Xk2xr/exec";
+const GOOGLE_SHEETS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwg6i6X4JRbGVVwyOCr5Z8fQ9JnM6pdM7p0YdxpKrxxzwQBbB57AFwfKyrR1mIJ_Yxw/exec";
 
 // Function to handle user registration
 async function registerUser(event) {
