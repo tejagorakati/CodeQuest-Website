@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Crusade - CSE Department</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .highlight { 
+            color: #0a079f; /* Bright yellow color for emphasis */
+            font-weight: bold;
+        }
+        .rules-title {
+            color: #d32f2f; /* Dark red for emphasis */
+            font-weight: bold;
+        }
+        .rule {
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,23 +35,22 @@
         <div class="banner">
             <img src="CodeQuest.jpg" alt="Sathyabama University">
             <div class="overlay">
-                <h1>Code Crusade </h1>
+                <h1>Code Crusade</h1>
                 <p>Organized by the <b>CSE Department</b> | Sathyabama Institute Of Science And Technology</p>
-                
             </div>
         </div>
     </header>
 
     <section class="about">
-        <h2>🚀 About the Event</h2>
-        <p>Code Crusade is an exciting coding competition designed to test your Python skills across three challenging rounds.</p>
+        <h2 class="highlight">🚀 About the Event</h2>
+        <p>Code Crusade is an exciting coding competition designed to test your <span class="highlight">Python</span> skills across three challenging rounds.</p>
     </section>
 
     <section class="rounds">
         <h2>📌 Competition Rounds</h2>
         <div class="round-card">
             <h3>📝 Round 1: MCQ Test</h3>
-            <p>Test your Python fundamentals with a time-based quiz.</p>
+            <p>Test your <span class="highlight">Python</span> fundamentals with a time-based quiz.</p>
         </div>
         <div class="round-card">
             <h3>🐞 Round 2: Debugging Challenge</h3>
@@ -43,14 +65,29 @@
     <section class="details">
         <h2>📅 Event Details</h2>
         <p><b>Date:</b> 13 - 03 - 2025</p>
-        <p><b>Venue:</b> Data Structures lab - 2ND floor , NEW CSE BLOCK</p>
+        <p><b>Venue:</b> Data Structures lab - 2ND floor, NEW CSE BLOCK</p>
         <p><b>Duration:</b> 11:15 AM TO 3:15 PM</p>
-        <p><b>Who Can Participate?</b> Only I year CSE students with Good Python knowledge.</p>
+        <p><b>Who Can Participate?</b> Only I year CSE students with good <span class="highlight">Python</span> knowledge.</p>
     </section>
-<a href="register.html" class="btn">Register Now</a>
+
+    <section class="rules">
+        <h2 class="rules-title">📜 Rules and Regulations</h2>
+        <ul>
+            <li class="rule">No Late Entry - Strict Timing Rules</li>
+            <li class="rule">Malpractice = Disqualification</li>
+            <li class="rule">No Tab Switching - Auto-submit if detected</li>
+            <li class="rule">No AI Tools - Solve Independently</li>
+            <li class="rule">Fair Play Only - No Sharing Answers</li>
+            <li class="rule">Fixed Time Limit - No Late Submissions</li>
+            <li class="rule">Judges' Decision Final - No Disputes</li>
+            <li class="rule">Maintain Silence - No Discussions During the Contest</li>
+        </ul>
+    </section>
+
+    <a href="register.html" class="btn">Register Now</a>
 
     <footer>
-        <p>© CodeCrusade | Sathyabama Institute Of Science And Technology- CSE Department</p>
+        <p>© CodeCrusade | Sathyabama Institute Of Science And Technology - CSE Department</p>
     </footer>
 
 </body>
